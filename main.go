@@ -56,7 +56,7 @@ func main() {
 	fmt.Println(s1 == s2)
 
 	//scanf can be used
-	var number float64
+	/*var number float64
 	fmt.Scanf("%f", &number)
 	output := number
 	fmt.Println("Using Scanf, output wil be = ", output)
@@ -64,7 +64,7 @@ func main() {
 	//increment opertor
 	k := 10
 	k += 1
-	fmt.Println(k)
+	fmt.Println(k)*/
 
 	main1()
 
@@ -77,5 +77,12 @@ func main() {
 
 	fmt.Println("Sum is  : ", sum)
 	fmt.Println("Difference is : ", dif)
+
+	//control structure
+	//controlS()
+	//p3()
+
+	//arrays
+	array()
 
 }
