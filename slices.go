@@ -2,6 +2,14 @@ package main
 
 import "fmt"
 
+func print1(s []int) {
+	s[0] = 12
+	s = append(s, 10)
+}
+func print2(s *[]int) {
+	(*s)[0] = 70
+	*s = append(*s, 90)
+}
 func slice() {
 	var x []int
 
@@ -34,4 +42,15 @@ func slice() {
 	copy(slice1, slice2)
 	fmt.Println("Slice1 = ", slice1)
 	fmt.Println("Slice2 = ", slice2)
+
+	//pass by value
+	myslice := []int{1, 2, 3, 4, 5}
+	print1(myslice)
+	fmt.Println(myslice) //12 2 3 4 5
+
+	//pass by reference
+	myslice2 := []int{10, 20, 30, 40, 50}
+
+	print2(&myslice2)
+	fmt.Println(myslice2) //70 20 30 40 50 90
 }

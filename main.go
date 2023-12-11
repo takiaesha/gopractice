@@ -85,6 +85,7 @@ func main() {
 	//arrays
 	//array()
 
-	slice()
+	//	slice()
+	mp()
 
 }
