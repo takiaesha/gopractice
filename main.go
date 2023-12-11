@@ -83,6 +83,8 @@ func main() {
 	//p3()
 
 	//arrays
-	array()
+	//array()
+
+	slice()
 
 }
